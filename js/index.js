@@ -12,9 +12,9 @@ $(document).ready(function () {
         }
     })
 
-    $("body:not(#btn-search)").click(function (e) {
-        if ($("#search-items").length) {
-        // if($("#search-box").is(":visible")){
+    $("body").click(function (e) {
+        console.log(e.target.id);
+        if (e.target.id !== "search-container" && e.target.id !== "btn-search" && e.target.id !== "search-box") {
             closeAllItems();
             $('#btn-search').show();
             $("#search-box").hide();
