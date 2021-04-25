@@ -87,14 +87,21 @@ header {
     align-content: center;
 }
 
+.logo {
+
+    align-items: center;
+    display: flex;
+}
+
 .logo h1 {
     text-align: center;
     border: 2px solid black;
     margin: 20px 20px 20px 43px;
+    padding: 10px;
     font-size: 20px;
     font-family: "Montserrat";
-    font-weight: 700;
-    letter-spacing: 7px;
+    font-weight: 800;
+    letter-spacing: 10px;
 }
 
 nav a {
