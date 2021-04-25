@@ -13,10 +13,14 @@
     <script src="https://kit.fontawesome.com/2a5ee44477.js" crossorigin="anonymous"></script>
     <!--    js-->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/index.js"></script>
 </head>
 <body>
+<div class="top-header">
+    <h3><i class="far fa-bookmark"></i> Welcome to Franco - an e-Commerce PSD Template!</h3>
+    <a href="#"><h3><i class="fas fa-cog"></i> Shop Setting</h3></a>
+    <a href="#"><h3><i class="fas fa-lock"></i> Member Login</h3></a>
+</div>
 <div class="header">
     <header>
         <div class="logo col-lg-4">
@@ -41,13 +45,13 @@
             <a>
                 <img src="img/favorite_icon.png" alt="wishlist" width="32" height="32">
             </a>
-            <a>
+            <a class="cart">
                 <img src="img/cart_icon.png" alt="cart" width="32" height="32">
             </a>
         </div>
     </header>
 </div>
-<div class="container">
+<div class="container container-banner">
     <div class="banners">
         <div class="banner-left" style="position: relative">
             <div>
@@ -56,7 +60,7 @@
             <div class="banner01-text1">Two High-end Materials</div>
             <div class="banner01-button button-shop-now">Shop Now</div>
         </div>
-        <div class= banner-right">
+        <div class="banner-right">
             <div style="position: relative">
                 <div>
                     <img src="img/banner_02.jpg" alt="banner02" width="360" height="200">
@@ -84,7 +88,7 @@
     <section class="list-items">
         <div class="product">
             <div>
-                <img src="img/item_01.jpg">
+                <img class="product-img" src="img/item_01.jpg">
                 <div class="product-title">Suspendisse is volutpat</div>
                 <div class="product-rating-star">
                     <div class="checked">★★★</div>
@@ -211,140 +215,162 @@
         <div style="margin: 20px auto 50px auto; width: 50px; height: 1px; background-color: #8262b5"></div>
     </div>
     <div style="display: block">
-    <div class="blog-posts">
-        <div class="post-container">
-            <div class="post-card">
-                <img src="img/blog_01.jpg" alt="image_blog_01" height="200" width="361">
-                <div class="post-title">In commodo dolor vitae</div>
-                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestiae
-                    recusandae sit.</p>
-                <div class="blog-interact">
-                    <div class="blog-comments">
-                        <img src="img/comment_icon.png" alt="comments" width="16" height="16">
-                        <div>12</div>
+        <div class="container blog-posts">
+            <div class="post-container">
+                <div class="post-card">
+                    <img src="img/blog_01.jpg" alt="image_blog_01" height="200" width="361">
+                    <div class="post-title">In commodo dolor vitae</div>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestiae
+                        recusandae sit.</p>
+                    <div class="blog-interact">
+                        <div class="blog-comments">
+                            <img src="img/comment_icon.png" alt="comments" width="16" height="16">
+                            <div>12</div>
+                        </div>
+                        <div class="blog-love">
+                            <img src="img/love_icon.png" alt="love" width="16" height="16">
+                            <div>6</div>
+                        </div>
                     </div>
-                    <div class="blog-love">
-                        <img src="img/love_icon.png" alt="love" width="16" height="16">
-                        <div>6</div>
+                </div>
+                <div class="calendar-container">
+                    <div class="calendar">
+                        <div class="month">Jan</div>
+                        <div class="date">23</div>
                     </div>
                 </div>
             </div>
-            <div class="calendar-container">
-                <div class="calendar">
-                    <div class="month">Jan</div>
-                    <div class="date">23</div>
+            <div class="post-container">
+                <div class="post-card">
+                    <img src="img/blog_02.jpg" alt="image_blog_01" height="200" width="360">
+                    <div class="post-title">In commodo dolor vitae</div>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam
+                        nesciunt officia sequi. Perspiciatis.!</p>
+                    <div class="blog-interact">
+                        <div class="blog-comments">
+                            <img src="img/comment_icon.png" alt="comments" width="16" height="16">
+                            <div>12</div>
+                        </div>
+                        <div class="blog-love">
+                            <img src="img/love_icon.png" alt="love" width="16" height="16">
+                            <div>6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-container">
+                    <div class="calendar">
+                        <div class="month">Jan</div>
+                        <div class="date">23</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-card">
+                    <img src="img/blog_03.jpg" alt="image_blog_01" height="200" width="361">
+                    <div class="post-title">In commodo dolor vitae</div>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                        dolor fuga incidunt ipsum sint?</p>
+                    <div class="blog-interact">
+                        <div class="blog-comments">
+                            <img src="img/comment_icon.png" alt="comments" width="16" height="16">
+                            <div>12</div>
+                        </div>
+                        <div class="blog-love">
+                            <img src="img/love_icon.png" alt="love" width="16" height="16">
+                            <div>6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-container">
+                    <div class="calendar">
+                        <div class="month">Jan</div>
+                        <div class="date">23</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="post-container">
-            <div class="post-card">
-                <img src="img/blog_02.jpg" alt="image_blog_01" height="200" width="360">
-                <div class="post-title">In commodo dolor vitae</div>
-                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam
-                    nesciunt officia sequi. Perspiciatis.!</p>
-                <div class="blog-interact">
-                    <div class="blog-comments">
-                        <img src="img/comment_icon.png" alt="comments" width="16" height="16">
-                        <div>12</div>
-                    </div>
-                    <div class="blog-love">
-                        <img src="img/love_icon.png" alt="love" width="16" height="16">
-                        <div>6</div>
-                    </div>
-                </div>
-            </div>
-            <div class="calendar-container">
-                <div class="calendar">
-                    <div class="month">Jan</div>
-                    <div class="date">23</div>
-                </div>
-            </div>
+        <div class="dot-slide">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle dot"></i>
+            <i class="fas fa-circle"></i>
         </div>
-        <div class="post-container">
-            <div class="post-card">
-                <img src="img/blog_03.jpg" alt="image_blog_01" height="200" width="361">
-                <div class="post-title">In commodo dolor vitae</div>
-                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                    dolor fuga incidunt ipsum sint?</p>
-                <div class="blog-interact">
-                    <div class="blog-comments">
-                        <img src="img/comment_icon.png" alt="comments" width="16" height="16">
-                        <div>12</div>
-                    </div>
-                    <div class="blog-love">
-                        <img src="img/love_icon.png" alt="love" width="16" height="16">
-                        <div>6</div>
-                    </div>
-                </div>
-            </div>
-            <div class="calendar-container">
-                <div class="calendar">
-                    <div class="month">Jan</div>
-                    <div class="date">23</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dot-slide">
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle dot"></i>
-        <i class="fas fa-circle"></i>
-    </div>
     </div>
 </div>
 
 
-<footer>
-    <div class="about">
-        <h2 class="title-footer">About Franco</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deserunt ducimus et fuga libero nulla
-            optio quam reiciendis sapiente, sunt.</p>
-    </div>
-    <div class="navigation">
-        <h2 class="title-footer">Navigation</h2>
-        <div class="navigation-list">
-            <ul>
-                <li><a class="p-footer" href="#">Home</a></li>
-                <li><a class="p-footer" href="#">About us</a></li>
-                <li><a class="p-footer" href="#">Our Blog</a></li>
-                <li><a class="p-footer" href="#">Women</a></li>
-                <li><a class="p-footer" href="#">Men</a></li>
-                <li><a class="p-footer" href="#">Contact Us</a></li>
-            </ul>
-            <ul>
-                <li><a class="p-footer" href="#">FAQs</a></li>
-                <li><a class="p-footer" href="#">Featured Brands</a></li>
-                <li><a class="p-footer" href="#">Gift Vouchers</a></li>
-                <li><a class="p-footer" href="#">Affiliates</a></li>
-                <li><a class="p-footer" href="#">Specials Gift</a></li>
-                <li><a class="p-footer" href="#">Terms & Conditions</a></li>
-            </ul>
+<div class="footer">
+    <footer class="container">
+        <div class="about">
+            <h2 class="title-footer">About Franco</h2>
+            <div class="divider-footer"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deserunt ducimus et fuga libero
+                nulla
+                optio quam reiciendis sapiente, sunt.</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+        </div>
+        <div class="navigation">
+            <h2 class="title-footer">Navigation</h2>
+            <div class="divider-footer"></div>
+            <div class="navigation-list">
+                <ul>
+                    <li class="nav-item"><a class="p-footer" href="#">Home</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">About us</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Our Blog</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Women</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Men</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li class="nav-item"><a class="p-footer" href="#">FAQs</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Featured Brands</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Gift Vouchers</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Affiliates</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Specials Gift</a></li>
+                    <li class="nav-item"><a class="p-footer" href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <h2 class="title-footer">Shop Location</h2>
+            <div class="divider-footer"></div>
+            <table>
+                <tr>
+                    <td>
+                        <i class="far fa-map"></i>
+                    </td>
+                    <td class="p-footer">500 Hennessy Road</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="p-footer">Causeway Bay, Hong Kong</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone-alt"></i></td>
+                    <td class="p-footer">+1 23456789</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-envelope"></i></td>
+                    <td class="p-footer">contact@yourdomain.com</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <div class="divider-footer"></div>
+    <div class="footer-btm container">
+        <p class="copyright">&#169; Copyright 2021 & Made with <i class="fas fa-heart"></i> by <a
+                href="#">ArrowHitech.</a></p>
+        <div class="partner">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-discover"></i>
         </div>
     </div>
-    <div class="location">
-        <h2 class="title-footer">Shop Location</h2>
-        <table>
-            <tr>
-                <td>
-                    <i class="far fa-map"></i>
-                </td>
-                <td class="p-footer">500 Hennessy Road</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td class="p-footer">Causeway Bay, Hong Kong</td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-phone-alt"></i></td>
-                <td class="p-footer">+1 23456789</td>
-            </tr>
-            <tr>
-                <td><i class="far fa-envelope"></i></td>
-                <td class="p-footer">contact@yourdomain.com</td>
-            </tr>
-        </table>
-    </div>
-</footer>
+</div>
 
 </body>
 </html>

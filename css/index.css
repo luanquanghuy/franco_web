@@ -24,8 +24,31 @@ body {
 }
 
 .container {
-    margin-left: 95px;
-    margin-right: 95px;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-header {
+    background-color: #222222;
+    display: flex;
+    padding: 15px 30px 15px 30px;
+    width: 100%;
+}
+
+.top-header h3 {
+    margin-right: auto;
+}
+
+.top-header a {
+    text-decoration: none;
+}
+
+.top-header a:last-child{
+    margin-left: 28px;
+}
+
+.container-banner {
     margin-top: 50px;
 }
 
@@ -67,7 +90,7 @@ header {
 .logo h1 {
     text-align: center;
     border: 2px solid black;
-    margin: 20px 20px 20px 40px;
+    margin: 20px 20px 20px 43px;
     font-size: 20px;
     font-family: "Montserrat";
     font-weight: 700;
@@ -82,6 +105,10 @@ nav a {
     font-weight: 900;
     font-size: 14px;
     color: #000000;
+}
+
+nav a:hover {
+    color: #8262b5;
 }
 
 .header-right {
@@ -132,6 +159,10 @@ nav a {
     cursor: pointer;
 }
 
+.cart {
+    padding: 25px;
+}
+
 #btn-search {
     padding: 0;
 }
@@ -145,6 +176,7 @@ nav a {
     justify-content: space-between;
     /*float: left;*/
 }
+
 
 .banner-right {
     display: flex;
@@ -193,12 +225,14 @@ nav a {
     flex-direction: row;
     flex-grow: 4;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .product {
     position: relative;
-    flex: 1 0;
+    /*flex: 1 0;*/
     padding-bottom: 30px;
+    width: 262px;
 }
 
 .product-title {
@@ -281,8 +315,6 @@ nav a {
 .blog-posts {
     display: flex;
     justify-content: space-between;
-    margin-left: 95px;
-    margin-right: 95px;
     margin-top: 50px;
 }
 
@@ -384,23 +416,56 @@ nav a {
     font-size: 14px;
 }
 
+.footer {
+    background-color: #222222;
+}
+
 footer {
     display: flex;
-    background-color: #222222;
-    padding-left: 95px;
-    padding-right: 95px;
     justify-content: space-between;
 }
 
-footer div {
-    width: 33.33%;
+footer.container {
+    padding-top: 55px;
 }
 
 .title-footer {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     color: white;
+}
+
+.social {
+    position: absolute;
+    display: inline;
+    bottom: 12px;
+    left: 0;
+}
+
+.social i {
+    float: left;
+    color: #616161;
+    margin-right: 30px;
+}
+
+.about {
+ width: 260px;
+    position: relative;
+}
+
+.navigation {
+    width: 360px;
+}
+
+.location {
+    width: 260px;
+}
+
+.divider-footer {
+    background: #616161;
+    height: 1px;
+    margin: 25px 0 25px 0;
 }
 
 .about p {
@@ -409,16 +474,29 @@ footer div {
     font-weight: 600;
     font-size: 14px;
     color: #616161;
+    line-height: 1.9em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #616161;
 }
 
 .navigation-list {
     display: flex;
-    width: 300px;
+    /*width: 300px;*/
     justify-content: space-between;
 }
 
 .navigation-list ul {
     list-style-type: none;
+    flex: 1;
+}
+
+.nav-item {
+    margin-bottom: 12px;
 }
 
 .p-footer {
@@ -430,4 +508,37 @@ footer div {
 
 a.p-footer {
     text-decoration: none;
+    width: 100%;
+}
+
+td.p-footer {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    color: #616161;
+    font-size: 14px;
+}
+
+.copyright i {
+    color: red;
+}
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-btm {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+.footer-btm p {
+
+}
+.footer-btm div {
+ font-size: 20px;
+    color: #999999;
 }
