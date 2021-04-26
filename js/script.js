@@ -22,19 +22,13 @@ $(document).ready(function () {
         }
     })
 
-    // document.addEventListener("click", function (e) {
-    //     if($("#search-items").length) {
-    //         closeAllItems();
-    //         $('#btn-search').show();
-    //         $("#search-box").hide();
-    //         console.log("btn clicked");
-    //     }
-    //     // if($('#btn-search').is(":hidden")) {
-    //     //     // $("#search-items").remove();
-    //     //     $('#btn-search').show();
-    //     //     $("#search-box").hide();
-    //     //     console.log("btn clicked");
-    //     // }
+    // $("#card-wrapper").hover(function () {
+    //     console.log("over")
+    //     $("#cart-dropdown").fadeIn("slow");
+    // })
+    // $("#card-wrapper").mouseout(function () {
+    //     console.log("out")
+    //     $("#cart-dropdown").hide();
     // })
 })
 
@@ -63,3 +57,4 @@ function typing(e) {
         a.appendChild(b);
     }
 }
+

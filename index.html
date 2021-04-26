@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Franco</title>
+    <meta charset="UTF-8">
+    <!--    css-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--    font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
     <!--    icon-->
     <script src="https://kit.fontawesome.com/2a5ee44477.js" crossorigin="anonymous"></script>
     <!--    js-->
@@ -45,9 +46,14 @@
             <a>
                 <img src="img/favorite_icon.png" alt="wishlist" width="32" height="32">
             </a>
-            <a class="cart">
-                <img src="img/cart_icon.png" alt="cart" width="32" height="32">
-            </a>
+            <div id="card-wrapper" class="cart-wrapper">
+                <a class="cart">
+                    <img src="img/cart_icon.png" alt="cart" width="32" height="32">
+                </a>
+                <div id="cart-dropdown" class="cart-dropdown">
+                    Không có sản phẩm trong giỏ hàng
+                </div>
+            </div>
         </div>
     </header>
 </div>
