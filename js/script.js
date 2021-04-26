@@ -46,12 +46,20 @@ function typing(e) {
     closeAllItems();
     console.log("typing")
     let input = e.value;
+    console.log(input)
     let a = document.createElement("div");
     a.setAttribute("id", "search-items");
     e.parentNode.appendChild(a);
-    for (let i = 0; i < 5; i++) {
+    let list_search = list.filter(item => item.toLowerCase().includes(input.toLowerCase()));
+    if(list_search.length > 0) {
+        for (let i = 0; i < list_search.slice(0, 5).length; i++) {
+            let b = document.createElement("div");
+            b.innerHTML = `<strong>${list_search[i]}</strong>`;
+            a.appendChild(b);
+        }
+    }else {
         let b = document.createElement("div");
-        b.innerHTML = `<strong>${list[i]}</strong>`;
+        b.innerHTML = `<strong>Không tìm thấy</strong>`;
         a.appendChild(b);
     }
 }

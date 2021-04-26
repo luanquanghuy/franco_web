@@ -84,7 +84,7 @@ header {
     margin: 20px 20px 20px 43px;
     padding: 10px;
     font-size: 20px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     letter-spacing: 10px;
 }
@@ -180,7 +180,7 @@ nav a:hover {
     position: absolute;
     right: 88px;
     top: 315px;
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', sans-serif;
     font-weight: bold;
     font-size: 30px;
 }
@@ -229,7 +229,7 @@ nav a:hover {
 
 .product-title {
     font-size: 14px;
-    font-family: "Montserrat-Bold";
+    font-family: "Montserrat-Bold", sans-serif;
 }
 
 .checked {
