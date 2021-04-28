@@ -6,9 +6,8 @@
 
 body {
     display: block;
-    width: 1920px;
+    min-width: 1920px;
 }
-
 
 .container {
     width: 1140px;
