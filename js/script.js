@@ -22,6 +22,15 @@ $(document).ready(function () {
         }
     })
 
+    //     .cart-wrapper:hover .cart-dropdown {
+    //     display: block;
+    // }
+    $(".cart-wrapper").click(function (e) {
+        if ($("#cart-dropdown").is(":hidden")) {
+            $("#cart-dropdown").show();
+        }
+    })
+
     // $("#card-wrapper").hover(function () {
     //     console.log("over")
     //     $("#cart-dropdown").fadeIn("slow");
@@ -45,13 +54,13 @@ function typing(e) {
     a.setAttribute("id", "search-items");
     e.parentNode.appendChild(a);
     let list_search = list.filter(item => item.toLowerCase().includes(input.toLowerCase()));
-    if(list_search.length > 0) {
+    if (list_search.length > 0) {
         for (let i = 0; i < list_search.slice(0, 5).length; i++) {
             let b = document.createElement("div");
             b.innerHTML = `<strong>${list_search[i]}</strong>`;
             a.appendChild(b);
         }
-    }else {
+    } else {
         let b = document.createElement("div");
         b.innerHTML = `<strong>Không tìm thấy</strong>`;
         a.appendChild(b);
