@@ -3,6 +3,8 @@
 <head>
     <title>Franco</title>
     <meta charset="UTF-8">
+    <!--    ?-->
+    <meta name="viewport" content="width:device-width, initial-scale=1, maximum-scale=1">
     <!--    css-->
     <!--    <link rel="stylesheet" href="./css/normalize.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,14 +17,16 @@
     <!--    icon-->
     <script src="https://kit.fontawesome.com/2a5ee44477.js" crossorigin="anonymous"></script>
     <!--    js-->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="lib/js/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </head>
 <body>
 <div class="top-header">
     <h5><i class="far fa-bookmark"></i> Welcome to Franco - an e-Commerce PSD Template!</h5>
-    <a href="#"><h5><i class="fas fa-cog"></i> Shop Setting</h5></a>
-    <a href="#"><h5><i class="fas fa-lock"></i> Member Login</h5></a>
+    <div class="header-top__right">
+        <a href="#"><h5><i class="fas fa-cog"></i> Shop Setting</h5></a>
+        <a href="#"><h5><i class="fas fa-lock"></i> Member Login</h5></a>
+    </div>
 </div>
 <div class="header">
     <header>
@@ -31,13 +35,13 @@
         </div>
         <div class="main-menu align-items-center">
             <nav>
-                <a href="#home">HOME</a>
-                <a href="#women">WOMEN</a>
-                <a href="#men">MEN</a>
-                <a href="#about">ABOUT US</a>
-                <a href="#blog">BLOG</a>
-                <a href="#collections">COLLECTIONS</a>
-                <a href="#contact">CONTACT</a>
+                <a href="#">HOME</a>
+                <a href="#">WOMEN</a>
+                <a href="#">MEN</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">BLOG</a>
+                <a href="#">COLLECTIONS</a>
+                <a href="#">CONTACT</a>
                 <div id="search-container" class="search-container">
                     <i id="btn-search" class="fas fa-search"></i>
                     <input hidden id="search-box" type="text" placeholder="" onkeyup="typing(this)">
@@ -58,232 +62,238 @@
     </header>
 </div>
 <div class="container container-banner">
-    <div class="banners">
-        <div class="banner-left" style="position: relative">
-            <div>
-                <img src="img/banner_01.jpg" alt="banner01" width="750" height="560">
-            </div>
-            <div class="banner01-text1">Two High-end Materials</div>
-            <a class="banner01-button button-shop-now">Shop Now</a>
-        </div>
-        <div class="banner-right">
-            <div style="position: relative">
+    <section>
+        <div class="banners">
+            <div class="banner-left banner" style="position: relative">
                 <div>
-                    <img src="img/banner_02.jpg" alt="banner02" width="360" height="200">
+                    <img class="banner-img-1" src="img/banner_01.jpg" alt="banner01">
                 </div>
-                <div class="banner__text-title" style="position: absolute; left: 55px; top: 85px">SMALL THING</div>
-                <div class="banner__text-subtitle" style="position: absolute; left: 55px; top: 109px">MAKE DIFFERENT
-                </div>
+                <div class="banner01-text1">Two High-end Materials</div>
+                <a class="banner01-button button-shop-now">Shop Now</a>
             </div>
-            <div style="position: relative">
-                <div>
-                    <img src="img/banner_03.jpg" alt="banner03" width="360" height="330">
+            <div class="container-banners-right">
+                <div class="banner-right">
+                    <div class="banner" style="position: relative">
+                        <div>
+                            <img class="banner-img-2" src="img/banner_02.jpg" alt="banner02">
+                        </div>
+                        <div class="banner__text-title title-banner-2">SMALL THING</div>
+                        <div class="banner__text-subtitle subtitle-banner-2">MAKE DIFFERENT
+                        </div>
+                    </div>
+                    <div class="banner" style="position: relative">
+                        <div>
+                            <img class="banner-img-3" src="img/banner_03.jpg" alt="banner03">
+                        </div>
+                        <div class="banner__text-title title-banner-3">FOLIO</div>
+                        <div class="banner__text-subtitle subtitle-banner-3">BACKPACK</div>
+                        <a class="button-shop-now banner03-button">Shop Now</a>
+                    </div>
                 </div>
-                <div class="banner__text-title" style="position: absolute; left: 40px; top: 120px">FOLIO</div>
-                <div class="banner__text-subtitle" style="position: absolute; left: 40px; top: 142px">BACKPACK</div>
-                <a class="button-shop-now banner03-button">Shop Now</a>
             </div>
         </div>
-    </div>
-    <h3 class="pd-top-76">FRANCO</h3>
-    <h2 class="mg-top-16">FEATURED ITEMS</h2>
-    <div class="divider-title-btm"></div>
-    <section class="list-items">
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_01.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
-                    </div>
-                </div>
-            </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_02.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+    </section>
+    <section>
+        <h3 class="pd-top-76">FRANCO</h3>
+        <h2 class="mg-top-16">FEATURED ITEMS</h2>
+        <div class="divider-title-btm"></div>
+        <div class="list-items">
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_01.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_03.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_02.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_04.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_03.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_05.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_04.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_06.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_05.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_07.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_06.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
-        </div>
-        <div class="product">
-            <div class="product-container">
-                <a class="product-img" href="#">
-                    <img src="img/item_08.jpg" alt="img_product" width="262" height="323">
-                </a>
-                <div class="product-desc">
-                    <p class="product-title d-flex align-item-center">
-                        <a href="#">Suspendisse is volutpat</a>
-                    </p>
-                    <div class="product-rating-star d-flex align-item-center">
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star checked"></i>
-                        <i class="far fa-star unchecked"></i>
-                        <i class="far fa-star unchecked"></i>
-                    </div>
-                    <div class="product-price d-flex align-item-center">
-                        <div class="product-price-orignal d-flex align-item-center">$99.00</div>
-                        <div class="product-price-discount">$84.00</div>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_07.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
                     </div>
                 </div>
+                <a class="product-add-cart">ADD TO CART</a>
             </div>
-            <a class="product-add-cart">ADD TO CART</a>
+            <div class="product">
+                <div class="product-container">
+                    <a class="product-img" href="#">
+                        <img src="img/item_08.jpg" alt="img_product" width="262" height="323">
+                    </a>
+                    <div class="product-desc">
+                        <p class="product-title d-flex align-item-center">
+                            <a href="#">Suspendisse is volutpat</a>
+                        </p>
+                        <div class="product-rating-star d-flex align-item-center">
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star checked"></i>
+                            <i class="far fa-star unchecked"></i>
+                            <i class="far fa-star unchecked"></i>
+                        </div>
+                        <div class="product-price d-flex align-item-center">
+                            <div class="product-price-orignal d-flex align-item-center">$99.00</div>
+                            <div class="product-price-discount">$84.00</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="product-add-cart">ADD TO CART</a>
+            </div>
         </div>
     </section>
 </div>
-<div class="container__blog">
+<section class="container__blog">
     <div class="blog-title">
         <h3 class="pd-top-76 text-center">LATEST</h3>
         <h2 class="text-center mg-top-16">NEWS & EVENTS</h2>
@@ -291,110 +301,179 @@
     </div>
     <div style="display: block">
         <div class="container blog-posts">
-            <div class="post-container">
-                <div class="post-card">
-                    <a href="#">
-                        <img src="img/blog_01.jpg" alt="image_blog_01" height="200" width="361">
-                    </a>
-                    <h6 class="post-title">
-                        <a href="#">In commodo dolor vitae</a></h6>
-                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
-                        pariatur qui. Cumque mollitia, sint.</p>
-                    <div class="divider-desc-blog"></div>
-                    <div class="blog-interact">
-                        <div class="blog-comments">
-                            <a href="#">
-                                <i class="far fa-comment"></i>
-                                <span>12</span>
-                            </a>
+            <div class="slides">
+                <div class="post-container">
+                    <div class="post-card">
+                        <a href="#">
+                            <img src="img/blog_01.jpg" alt="image_blog_01" height="200" width="361">
+                        </a>
+                        <h6 class="post-title">
+                            <a href="#">In commodo dolor vitae</a></h6>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            pariatur qui. Cumque mollitia, sint.</p>
+                        <div class="divider-desc-blog"></div>
+                        <div class="blog-interact">
+                            <div class="blog-comments">
+                                <a href="#">
+                                    <i class="far fa-comment"></i>
+                                    <span>12</span>
+                                </a>
+                            </div>
+                            <div class="blog-love">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                                <span>6</span>
+                            </div>
                         </div>
-                        <div class="blog-love">
-                            <a href="#">
-                                <i class="far fa-heart"></i>
-                            </a>
-                            <span>6</span>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar">
+                            <div class="month">Jan</div>
+                            <div class="date">23</div>
                         </div>
                     </div>
                 </div>
-                <div class="calendar-container">
-                    <div class="calendar">
-                        <div class="month">Jan</div>
-                        <div class="date">23</div>
+                <div class="post-container">
+                    <div class="post-card">
+                        <a href="#">
+                            <img src="img/blog_02.jpg" alt="image_blog_01" height="200" width="361">
+                        </a>
+                        <h6 class="post-title">
+                            <a href="#">In commodo dolor vitae</a></h6>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            pariatur qui. Cumque mollitia, sint.</p>
+                        <div class="divider-desc-blog"></div>
+                        <div class="blog-interact">
+                            <div class="blog-comments">
+                                <a href="#">
+                                    <i class="far fa-comment"></i>
+                                    <span>12</span>
+                                </a>
+                            </div>
+                            <div class="blog-love">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar">
+                            <div class="month">Jan</div>
+                            <div class="date">23</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-card">
+                        <a href="#">
+                            <img src="img/blog_03.jpg" alt="image_blog_01" height="200" width="361">
+                        </a>
+                        <h6 class="post-title">
+                            <a href="#">In commodo dolor vitae</a></h6>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            pariatur qui. Cumque mollitia, sint.</p>
+                        <div class="divider-desc-blog"></div>
+                        <div class="blog-interact">
+                            <div class="blog-comments">
+                                <a href="#">
+                                    <i class="far fa-comment"></i>
+                                    <span>12</span>
+                                </a>
+                            </div>
+                            <div class="blog-love">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar">
+                            <div class="month">Jan</div>
+                            <div class="date">23</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-card">
+                        <a href="#">
+                            <img src="img/blog_01.jpg" alt="image_blog_01" height="200" width="361">
+                        </a>
+                        <h6 class="post-title">
+                            <a href="#">In commodo dolor vitae</a></h6>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            pariatur qui. Cumque mollitia, sint.</p>
+                        <div class="divider-desc-blog"></div>
+                        <div class="blog-interact">
+                            <div class="blog-comments">
+                                <a href="#">
+                                    <i class="far fa-comment"></i>
+                                    <span>12</span>
+                                </a>
+                            </div>
+                            <div class="blog-love">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar">
+                            <div class="month">Jan</div>
+                            <div class="date">23</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-card">
+                        <a href="#">
+                            <img src="img/blog_02.jpg" alt="image_blog_01" height="200" width="361">
+                        </a>
+                        <h6 class="post-title">
+                            <a href="#">In commodo dolor vitae</a></h6>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            pariatur qui. Cumque mollitia, sint.</p>
+                        <div class="divider-desc-blog"></div>
+                        <div class="blog-interact">
+                            <div class="blog-comments">
+                                <a href="#">
+                                    <i class="far fa-comment"></i>
+                                    <span>12</span>
+                                </a>
+                            </div>
+                            <div class="blog-love">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar">
+                            <div class="month">Jan</div>
+                            <div class="date">23</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="post-container">
-                <div class="post-card">
-                    <a href="#">
-                        <img src="img/blog_02.jpg" alt="image_blog_01" height="200" width="361">
-                    </a>
-                    <h6 class="post-title">
-                        <a href="#">In commodo dolor vitae</a></h6>
-                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
-                        pariatur qui. Cumque mollitia, sint.</p>
-                    <div class="divider-desc-blog"></div>
-                    <div class="blog-interact">
-                        <div class="blog-comments">
-                            <a href="#">
-                                <i class="far fa-comment"></i>
-                                <span>12</span>
-                            </a>
-                        </div>
-                        <div class="blog-love">
-                            <a href="#">
-                                <i class="far fa-heart"></i>
-                            </a>
-                            <span>6</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="calendar-container">
-                    <div class="calendar">
-                        <div class="month">Jan</div>
-                        <div class="date">23</div>
-                    </div>
-                </div>
-            </div>
-            <div class="post-container">
-                <div class="post-card">
-                    <a href="#">
-                        <img src="img/blog_03.jpg" alt="image_blog_01" height="200" width="361">
-                    </a>
-                    <h6 class="post-title">
-                        <a href="#">In commodo dolor vitae</a></h6>
-                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
-                        pariatur qui. Cumque mollitia, sint.</p>
-                    <div class="divider-desc-blog"></div>
-                    <div class="blog-interact">
-                        <div class="blog-comments">
-                            <a href="#">
-                                <i class="far fa-comment"></i>
-                                <span>12</span>
-                            </a>
-                        </div>
-                        <div class="blog-love">
-                            <a href="#">
-                                <i class="far fa-heart"></i>
-                            </a>
-                            <span>6</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="calendar-container">
-                    <div class="calendar">
-                        <div class="month">Jan</div>
-                        <div class="date">23</div>
-                    </div>
-                </div>
-            </div>
+            <a href="#" class="prev-slide">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="#" class="next-slide">
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
-        <div class="dot-slide">
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle dot"></i>
-            <i class="fas fa-circle"></i>
+        <div id="dot-slides" class="dot-slide">
         </div>
     </div>
-</div>
+</section>
 
 
 <div class="footer">
@@ -467,7 +546,7 @@
             </table>
         </div>
     </footer>
-    <div class="divider-footer"></div>
+    <div class="divider-footer-end"></div>
     <div class="footer-btm container">
         <p class="copyright">&#169; Copyright 2021 & Made with <i class="fas fa-heart"></i> by <a
                 href="#" class="arrowhitech-link">ArrowHitech.</a></p>

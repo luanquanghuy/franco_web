@@ -30,16 +30,50 @@ $(document).ready(function () {
             $("#cart-dropdown").show();
         }
     })
+    showSlide(slide_index);
 
-    // $("#card-wrapper").hover(function () {
-    //     console.log("over")
-    //     $("#cart-dropdown").fadeIn("slow");
-    // })
-    // $("#card-wrapper").mouseout(function () {
-    //     console.log("out")
-    //     $("#cart-dropdown").hide();
-    // })
+    $(window).resize(function () {
+        let width = $(window).width();
+        // console.log(width);
+        if(width >= 1140){
+            slide_count_max = 3;
+            showSlide(slide_index);
+        }else if(width >= 755){
+            slide_count_max = 2;
+        }else {
+            slide_count_max = 1;
+        }
+        showSlide(slide_index);
+    })
 })
+var slide_index = 1;
+var slide_count_max = 3;
+
+function showSlide(index) {
+    slide_index = index;
+    var slides = document.getElementsByClassName("post-container");
+    for (let i = 1; i <= slides.length; i++) {
+        if (i >= index && i <= index + slide_count_max - 1) {
+            slides[i - 1].style.display = "block";
+        } else {
+            slides[i - 1].style.display = "none";
+        }
+    }
+    var dotSlide = document.getElementById("dot-slides");
+    dotSlide.innerHTML = "";
+    for (let i = 0; i < slides.length - slide_count_max + 1; i++) {
+        var elDot = document.createElement("i");
+        elDot.className = "fas fa-circle dot";
+        elDot.setAttribute("onclick", `showSlide(${i + 1})`);
+        dotSlide.appendChild(elDot);
+    }
+    var dots = document.getElementsByClassName("dot");
+    for (let i = 1; i <= dots.length; i++) {
+        dots[i - 1].className = dots[i - 1].className.replace(" dot-active", "");
+        // $(".dot-active").removeClass("dot-active");
+    }
+    dots[index - 1].className += " dot-active";
+}
 
 function closeAllItems() {
     $("#search-items").remove();
@@ -66,4 +100,5 @@ function typing(e) {
         a.appendChild(b);
     }
 }
+
 
