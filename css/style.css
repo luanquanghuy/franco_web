@@ -71,13 +71,17 @@ body {
     display: block;
     left: 0;
     right: 0;
-    padding-right: 32px;
     border-bottom: 1px solid #ddd;
+    padding-left: 8px;
+    padding-right: 12px;
 }
 
-@media (min-width: 1024px) {
+
+
+@media (min-width: 768px) {
     .header {
         padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -87,7 +91,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 @media (max-width: 375px) {
@@ -100,9 +104,6 @@ header {
     header {
         justify-content: space-between;
         margin-top: 0;
-    }
-    .dropdown-menu {
-        order: -1;
     }
 }
 
@@ -119,11 +120,12 @@ header {
 
 .dropdown-menu {
     position: relative;
+    order: -1;
 }
 
 @media (min-width: 768px) {
     .dropdown-menu {
-        margin-left: 28px;
+        /*margin-left: 28px;*/
     }
 }
 
@@ -216,6 +218,8 @@ a img {
 @media (min-width: 375px) {
     .logo {
         flex: 0;
+        justify-content: space-between;
+        /*margin-left: -32px;*/
     }
     .main-menu {
 
@@ -226,13 +230,27 @@ a img {
     text-align: center;
     border: 2px solid black;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    letter-spacing: 0.8em;
-    line-height: 0.75em;
-    width: 200px;
+    letter-spacing: 0.4em;
+    line-height: 1em;
+    width: 140px;
     height: 40px;
+}
+
+@media (min-width: 425px) {
+    .logo {
+
+    }
+    .logo h1 {
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 0.8em;
+        line-height: 0.75em;
+        width: 200px;
+        height: 40px;
+    }
 }
 
 nav a {
@@ -539,7 +557,7 @@ nav a:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
     .product {
         flex: 1 30%;
-        margin: 1.228% 1.228% 1.65%;
+        margin: 1.1% 1.228% 1.65%;
     }
 
     .list-items {
@@ -554,6 +572,7 @@ nav a:hover {
 @media (min-width: 1024px) {
     .product {
         flex: 1 22% !important;
+        margin: 1.228% 1.28% 2.35%;
     }
 }
 
@@ -975,7 +994,7 @@ footer.container {
 }
 
 .pd-top-76 {
-    padding-top: 71px;
+    padding-top: 69px;
 }
 
 .mg-top-16 {
@@ -989,8 +1008,14 @@ footer.container {
 h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: #616161;
+}
+
+@media (min-width: 375px) {
+    h5 {
+        font-size: 14px;
+    }
 }
 
 h2 {
