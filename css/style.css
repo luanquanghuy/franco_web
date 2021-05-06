@@ -34,14 +34,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 8px 3px 8px 3px;
 }
 
 @media (min-width: 425px) {
     .top-header {
         justify-content: normal;
         display: flex;
-        padding: 15px 0 15px 28px;
         flex-wrap: wrap;
+        padding: 15px 28px 15px 3px;
     }
 }
 
@@ -153,6 +154,11 @@ header {
     font-size: 14px;
     line-height: 36px;
     color: #000000;
+    padding-left: 10px;
+}
+
+.dropdown-menu-content li {
+    /*border: 1px solid #868686;*/
 }
 
 a img {
