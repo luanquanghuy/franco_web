@@ -99,6 +99,7 @@ header {
 @media (min-width: 375px) {
     header {
         justify-content: space-between;
+        margin-top: 0;
     }
     .dropdown-menu {
         order: -1;
