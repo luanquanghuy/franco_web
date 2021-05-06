@@ -48,11 +48,16 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         let width = $(window).width();
+        console.log(width)
+        if(width < 800){
+            $("#img-banner-2").width(width * 0.9);
+            $("#img-banner-3").width(width * 0.9);
+        }
         // console.log(width);
         if(width >= 1280){
             slide_count_max = 3;
             showSlide(slide_index);
-        }else if(width >= 1024){
+        }else if(width >= 768){
             slide_count_max = 2;
         }else {
             slide_count_max = 1;
@@ -68,6 +73,12 @@ $(document).ready(function () {
         slide_count_max = 1;
     }
     showSlide(slide_index);
+    console.log("width: " + width);
+    if(width < 800){
+        $("#img-banner-2").width(width * 0.9);
+        $("#img-banner-3").width(width * 0.9);
+    }
+
 })
 
 function showSlide(index) {

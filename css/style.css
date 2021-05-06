@@ -21,28 +21,33 @@ body {
     margin-right: auto;
 }
 
-/*@media (min-width: 768px) {*/
-/*    .container {*/
-/*        width: 750px;*/
-/*    }*/
-/*}*/
+.p-relative {
+    position: relative;
+}
 
-/*@media (min-width: 1280px) {*/
-/*    .container {*/
-/*        width: 1140px;*/
-/*    }*/
-/*}*/
-
+.d-block {
+    display: block;
+}
 
 .top-header {
     background-color: #222222;
     display: flex;
-    padding: 15px 0 15px 28px;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 425px) {
+    .top-header {
+        justify-content: normal;
+        display: flex;
+        padding: 15px 0 15px 28px;
+        flex-wrap: wrap;
+    }
 }
 
 .top-header h5 {
     margin-right: auto;
+    text-align: center;
 }
 
 .top-header a {
@@ -82,6 +87,22 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+    header {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 375px) {
+    header {
+        justify-content: space-between;
+    }
+    .dropdown-menu {
+        order: -1;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -97,6 +118,12 @@ header {
 
 .dropdown-menu {
     position: relative;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu {
+        margin-left: 28px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -178,8 +205,20 @@ a img {
 }
 
 .logo {
+    flex: 1 90%;
     align-items: center;
     top: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 375px) {
+    .logo {
+        flex: 0;
+    }
+    .main-menu {
+
+    }
 }
 
 .logo h1 {
@@ -199,7 +238,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 14px;
     color: #000000;
 }
@@ -355,15 +394,16 @@ nav a:hover {
 }
 
 .banner-right {
-    display: none;
+    display: flex;
     flex: 1 80%;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 800px) {
     .banner-right {
         display: flex;
+        flex-wrap: nowrap;
         flex: 1 calc(360 * 100% / 1140);
     }
 }
@@ -385,11 +425,20 @@ nav a:hover {
 
 .banner01-text1 {
     position: absolute;
-    right: calc(95 * 100% / 750);
-    top: calc(305 * 100% / 560);
+    right: calc(25 * 100% / 750);
+    top: calc(285 * 100% / 560);
     font-family: 'Pacifico', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 16px;
+    text-align: right;
+}
+
+@media (min-width: 666px) {
+    .banner01-text1 {
+        right: calc(95 * 100% / 750);
+        top: calc(305 * 100% / 560);
+        font-size: 30px;
+    }
 }
 
 .banner01-button {
@@ -477,12 +526,23 @@ nav a:hover {
 @media (min-width: 425px) {
     .product {
         flex: 1 44%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .list-items {
+        margin-left: -8px;
+        margin-right: -8px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .product {
         flex: 1 30%;
+        margin: 1.228% 1.228% 1.65%;
+    }
+
+    .list-items {
+        margin: -1.228%;
     }
 
     .list-items .product:first-child, .list-items .product:nth-child(2) {
@@ -651,6 +711,28 @@ nav a:hover {
     margin-right: 24px;
 }
 
+@media (min-width: 320px) {
+    .post-container {
+        width: 295px;
+    }
+}
+
+@media (min-width: 375px) {
+    .post-container {
+        width: 340px;
+    }
+}
+
+@media (min-width: 768px) {
+    .post-container {
+        width: 360px;
+    }
+}
+
+.post-card img {
+    max-width: 100%;
+}
+
 .calendar-container {
     position: absolute;
     display: flex;
@@ -692,6 +774,7 @@ nav a:hover {
 
 .post-card {
     position: absolute;
+    max-width: 100%;
 }
 
 .post-title a {
@@ -783,17 +866,11 @@ nav a:hover {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
-@media (min-width: 320px) {
-    footer {
-        justify-content: left;
-    }
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 689px) {
     footer {
         justify-content: space-between;
     }
@@ -1027,6 +1104,7 @@ td.p-footer {
 .footer-btm {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 28px;
 }
 
