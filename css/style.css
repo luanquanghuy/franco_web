@@ -15,21 +15,23 @@ body {
 }
 
 .container {
+    width: 90%;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (min-width: 1024px) {
-    .container {
-        width: 750px;
-    }
-}
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        width: 750px;*/
+/*    }*/
+/*}*/
 
-@media (min-width: 1280px) {
-    .container {
-        width: 1140px;
-    }
-}
+/*@media (min-width: 1280px) {*/
+/*    .container {*/
+/*        width: 1140px;*/
+/*    }*/
+/*}*/
 
 
 .top-header {
@@ -64,9 +66,14 @@ body {
     display: block;
     left: 0;
     right: 0;
-    padding-left: 32px;
     padding-right: 32px;
     border-bottom: 1px solid #ddd;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding-left: 32px;
+    }
 }
 
 header {
@@ -81,6 +88,41 @@ header {
     header {
         justify-content: normal;
     }
+}
+
+.nav-bar > i {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+.dropdown-menu-content {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+}
+
+.dropdown-menu-content a {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 36px;
+    color: #000000;
 }
 
 a img {
@@ -105,7 +147,7 @@ a img {
     margin-right: auto;
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px) {
     .main-menu {
         display: flex;
         justify-content: center;
@@ -168,7 +210,7 @@ nav a {
     }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
     nav a {
         padding-right: 25px;
     }
@@ -218,7 +260,7 @@ nav a:hover {
     width: 250px;
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px) {
     #search-box {
         width: 150px;
     }
@@ -279,119 +321,67 @@ nav a:hover {
 }
 
 .banner-img-1 {
-    width: 100%;
-    height: auto;
-}
-
-@media (min-width: 1280px) {
-    .banner-img-1 {
-        width: auto;
-    }
+    max-width: 100%;
 }
 
 .banner-img-2 {
-    /*width: 750px;*/
-    /*width: 100%;*/
-    /*height: auto;*/
+    max-width: 100%;
 }
-
-/*@media (min-width: 1024px) {*/
-/*    .banner-img-2 {*/
-/*        position: relative;*/
-/*        left: 50%;*/
-/*        transform: translateX(-50%);*/
-/*    }*/
-/*}*/
 
 .banner-img-3 {
-    /*width: 750px;*/
-    /*width: 100%;*/
-    /*height: auto;*/
+    max-width: 100%;
 }
-
-@media (min-width: 1170px) {
-    .banner-img-2 {
-        /*width: 100%;*/
-        /*height: auto;*/
-    }
-
-    .banner-img-3 {
-        /*width: 100%;*/
-        /*height: auto;*/
-    }
-}
-
-@media (min-width: 750px) and (max-width: 1170px){
-    .banner-img-2 {
-        width: 750px;
-        height: auto;
-    }
-
-    .banner-img-3 {
-        width: 750px;
-        height: auto;
-    }
-}
-
-@media (max-width: 750px){
-    .banner-img-2 {
-        width: 100%;
-        height: auto;
-    }
-
-    .banner-img-3 {
-        width: 100%;
-        height: auto;
-    }
-
-    .banner {
-        flex: 1;
-    }
-}
-
 
 .banners {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 800px) {
     .banners {
-        justify-content: space-between;
         flex-wrap: nowrap;
     }
 }
 
-@media (max-width: 750px){
-    .banners {
-        flex-direction: column;
-    }
+.banner-left {
+    flex: 1 80%;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 800px) {
     .banner-left {
-        margin-right: 28px;
+        margin-right: calc(30 * 100% / 1140);
+        flex: 1 calc(750 * 100% / 1140);
     }
-}
-
-.container-banners-right {
-    width: 100%;
 }
 
 .banner-right {
-    height: 100%;
-    display: flex;
+    display: none;
+    flex: 1 80%;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
-@media (min-width: 750px) and (max-width: 1170px) {
+@media (min-width: 800px) {
     .banner-right {
-        justify-content: space-between;
+        display: flex;
+        flex: 1 calc(360 * 100% / 1140);
     }
 }
 
+.banner-right-top {
+    flex: 1 calc(200 * 100% / 560);
+}
+
+@media (min-width: 800px) {
+    .banner-right-top {
+        margin-bottom: calc(40 * 100% / 560);
+    }
+}
+
+.banner-right-bottom {
+    flex: 1 calc(330 * 100% / 560);
+    /*align-self: end;*/
+}
 
 .banner01-text1 {
     position: absolute;
@@ -468,28 +458,55 @@ nav a:hover {
 .list-items {
     display: flex;
     flex-direction: row;
-    flex-grow: 4;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    margin: -1.228%;
+    /*margin-bottom: -0.73%;*/
 }
 
 .product {
-    position: relative;
-    /*flex: 1 0;*/
-    padding-bottom: 15px;
-    width: 262px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    flex: 1 80%;
+    margin: 1.228% 1.228% 1.65%;
+}
+
+@media (min-width: 320px) {
+    .product {
+        flex: 1 80%;
+    }
+}
+
+@media (min-width: 425px) {
+    .product {
+        flex: 1 44%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product {
+        flex: 1 30%;
+    }
+
+    .list-items .product:first-child, .list-items .product:nth-child(2) {
+        flex: 1 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product {
+        flex: 1 22% !important;
+    }
 }
 
 /*.product-container {*/
 /*    display: block;*/
 /*}*/
 
-/*.product-img {*/
-/*    display: block;*/
-/*}*/
+.product-img {
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+}
 
 .product-desc {
     margin-top: 12px;
@@ -556,11 +573,15 @@ nav a:hover {
     color: #8262b5;
 }
 
+.product-img-container {
+    position: relative;
+}
+
 .product-add-cart {
     position: absolute;
     left: 5px;
-    top: 278px;
-    background: #ffffff;
+    bottom: 5px;
+    background: #fff;
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -579,7 +600,7 @@ nav a:hover {
 
 .container__blog {
     /*height: 708px;*/
-    margin-top: 60px;
+    margin-top: 75px;
     background-image: url("../img/my_bg.jpg");
     background-size: cover;
 }
@@ -732,7 +753,7 @@ nav a:hover {
     left: 0px;
 }
 
-.prev-slide:hover, .next-slide:hover{
+.prev-slide:hover, .next-slide:hover {
     color: white;
     background-color: black;
 }
